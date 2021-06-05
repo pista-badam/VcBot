@@ -23,7 +23,7 @@ async def current_vc_filter(_, __, m: Message):
 current_vc = filters.create(current_vc_filter)
 
 
-@Client.on_message((current_vc & filters.command("play") | (current_vc & filters.audio))
+@Client.on_message((current_vc & filters.command("play") | (current_vc & filters.audio & filters.private))
 )
 async def play_track(client, m: Message):
     group_call = mp.group_call
