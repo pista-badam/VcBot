@@ -11,6 +11,9 @@ from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
+from config import Config
+
+ADMINS = Config.ADMINS
 
 async def aexec(code, client, message):
     exec(
