@@ -6,11 +6,12 @@ from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
 from utils.vc import mp
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from helpers.decs import authorized_users_only
 
-ADMINS=Config.ADMINS
+ADMI=Config.ADMINS
 CHAT=Config.CHAT
 LOG_GROUP=Config.LOG_GROUP
-
+ADMINS=authorized_users_only
 
 async def current_vc_filter(_, __, m: Message):
     group_call = mp.group_call
