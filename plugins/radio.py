@@ -2,8 +2,9 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from utils.vc import mp, RADIO
 from config import Config
+from helpers.decs import authorized_users_only
 STREAM_URL=Config.STREAM_URL
-ADMINS=Config.ADMINS
+ADMINS=authorized_users_only
 
 @Client.on_message(filters.command("radio") & filters.user(ADMINS))
 async def radio(client, message: Message):
