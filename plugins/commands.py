@@ -2,9 +2,9 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import Client, filters
 
 
-REPO = "**🗂️ Repo :** [VcBot Repo](https://github.com/The-HellBot/VcBot)\n\n🌟 **Github :** [The-HellBot](https://github.com/The-HellBot) \n\n**📍   [Group](https://t.me/hellbot_chat)  &  [Channel](https://t.me/its_hellbot)   📍**"
-HOME_TEXT = "💖 **Hi [{}](tg://user?id={})**,\n\nI'm **Hêll Music Bot** \nI Can Play Radio/Stream Music In Channels & Groups 24x7 Nonstop!\n\n**😉 Happy Streaming 😉**"
-HELP = """**Join @The_HellBot and @Its_Fuckin_Hell to get more help!!
+REPO = "**🗂️ Repo :** PRIVATE REPO CAN'T PROVIDE YOU ASK [PISTA](https://t.me/PISTA_XD) FOR MORE INFO\n\n🌟 **Github :** ONE DAY SURELY I WILL TELL YOU \n\n**📍   [Group](https://t.me/RIDERIANS)  &  [Channel](https://t.me/RIDERIANS)   📍**"
+HOME_TEXT = "💖 **Hi [{}](tg://user?id={})**,\n\nI'm **PÎSTÂ Music Bot** \nI Can Play Radio/Stream Music In Channels & Groups 24x7 Nonstop!\n\n**😉 Happy Streaming 😉**"
+HELP = """**DM [PISTA](https://t.me/PISTA_XD) TO GET MORE HELP!
 
 🏷️ **Users Commands**:
 \u2022 `/play`  -  Reply to an audio to play or add to queue.
@@ -35,12 +35,8 @@ HELP = """**Join @The_HellBot and @Its_Fuckin_Hell to get more help!!
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('📺 CHANNEL', url='https://t.me/The_HellBot'),
-        InlineKeyboardButton('🏘️ Group', url='https://t.me/Its_Fuckin_Hell'),
-    ],
-    [
-        InlineKeyboardButton('📑 GitHub', url='https://github.com/The-HellBot'),
-        InlineKeyboardButton('📜 VcBot Repo', url='https://github.com/The-HellBot/VcBot'),
+        InlineKeyboardButton('💫 OWNER', url='https://t.me/PISTA_XD'),
+        InlineKeyboardButton('🏘️ Group', url='https://t.me/RIDERIANS'),
     ],
     [
         InlineKeyboardButton('⚙️ HELP ⚙️', callback_data='help'),
